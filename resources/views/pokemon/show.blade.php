@@ -8,8 +8,8 @@
 
     <p><strong>Spesies:</strong> {{ $pokemon->species }}</p>
     <p><strong>Tipe Utama:</strong> {{ $pokemon->primary_type }}</p>
-    <p><strong>Berat:</strong> {{ $pokemon->weight }} kg</p>
-    <p><strong>Tinggi:</strong> {{ $pokemon->height }} m</p>
+    <p><strong>Berat:</strong> {{ number_format($pokemon->weight, 2) }} kg</p>
+    <p><strong>Tinggi:</strong> {{ number_format($pokemon->height, 2) }} m</p>
     <p><strong>HP:</strong> {{ $pokemon->hp }}</p>
     <p><strong>Serangan:</strong> {{ $pokemon->attack }}</p>
     <p><strong>Pertahanan:</strong> {{ $pokemon->defense }}</p>
